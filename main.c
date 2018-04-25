@@ -62,3 +62,17 @@ int board_main() {
     }
     return 0;
 }
+
+void help_print() {
+    printf("\t%s(r) Restart  (q) Quit\n\n%s", BLACK, RESET);
+}
+
+void info_print() {
+    printf("%s\n"
+    "\t  ████──█──█──███──███──███\n"
+    "\t  █──█──█──█──█────█────█\n"
+    "\t  █─────████──███──███──███\n"
+    "\t  █──█──█──█──█──────█────█\n"
+    "\t  ████──█──█──███──███──███\n%s", BLUE, RESET);
+    printf("\t    %s(s) Start or (q) Quit\n", GREEN);
+}
