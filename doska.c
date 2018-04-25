@@ -49,3 +49,12 @@ void print_board() {
     }
     printf("%s\n", RESET);
 }
+
+char** movePawn(char **v, int* pozition) { 
+    int poz = container[pozition[1]][pozition[0]];
+    container[pozition[1]][pozition[0]] = container[pozition[3]][pozition[2]];
+    container[pozition[3]][pozition[2]] = poz;
+    return v;
+}
+
+
