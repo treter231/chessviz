@@ -1,0 +1,8 @@
+*.txt
+.gitignore
+.md
+*.o
+.main.c.swp
+main.c~
+#main.c#
+*chess
